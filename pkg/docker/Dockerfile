@@ -47,7 +47,7 @@ RUN set -eux; \
                 libsnappy-dev \
                 libssl-dev \
                 git; \
-        cd /tmp && git clone --branch $BRANCH https://github.com/Snapchat/KeyDB.git --recursive; \
+        cd /tmp && git clone --branch $BRANCH https://github.com/mhassan1/KeyDB.git --recursive; \
         cd /tmp/KeyDB; \
         # disable protected mode as it relates to docker
         grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' ./src/config.cpp; \
